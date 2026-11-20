@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Veronika Janolková</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hlavicka">
+    <div class="hlavicka-obsah">
+      <a class="logo" href="index.html">Veronika Janolková</a>
+      <button class="menu-tlacidlo" id="menuTlacidlo" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#o-mne">About me</a>
+        <a href="kontakt.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="sekcia">
+      <div class="obal kontakt-mriezka">
+
+        <div class="kontakt-info">
+          <h1>Get in touch</h1>
+          <p class="uvodny-text">Fill in the form and I'll get back to you as soon as possible.</p>
+          <ul class="kontakt-udaje">
+            <li><span>E-mail</span><a href="mailto:tvoj@email.cz">janolkovaveronka@gmail.com</a></li>
+            <li><span>City</span>Ostrava</li>
+          </ul>
+        </div>
+
+        <form id="kontaktForm" novalidate>
+          <div class="pole">
+            <label for="meno">Name</label>
+            <input type="text" id="meno" name="meno" autocomplete="name">
+            <p class="chyba" id="meno-chyba"></p>
+          </div>
+
+          <div class="pole">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <p class="chyba" id="email-chyba"></p>
+          </div>
+
+          <div class="pole">
+            <label for="sprava">Message</label>
+            <textarea id="sprava" name="sprava" rows="5" maxlength="500"></textarea>
+            <p class="pocitadlo"><span id="pocet">0</span> / 500</p>
+            <p class="chyba" id="sprava-chyba"></p>
+          </div>
+
+          <button type="submit" class="tlacidlo">Send message</button>
+          <p id="vysledok" role="status"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="pata">
+    <p>&copy; <span id="rok">2026</span> Veronika Janolková</p>
+    <p><a href="index.html">Home</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

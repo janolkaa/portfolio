@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veronika Janolková – Portfolio</title>
+  <meta name="description" content="Personal portfolio of Veronika Janolková, an Informatics student at VŠB-TUO.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hlavicka">
+    <div class="hlavicka-obsah">
+      <a class="logo" href="index.html">Veronika Janolková</a>
+      <button class="menu-tlacidlo" id="menuTlacidlo" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" aria-label="Main menu">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="index.html#o-mne">About me</a>
+        <a href="kontakt.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Veronika<br>Janolková</h1>
+        <p class="podnadpis">Informatics student at VŠB-TUO in Ostrava</p>
+        <div class="hero-tlacidla">
+          <a class="tlacidlo" href="#o-mne">About me</a>
+          <a class="tlacidlo tlacidlo-obrys" href="kontakt.html">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcia" id="o-mne">
+      <div class="obal dva-stlpce">
+        <h2>About me</h2>
+        <div>
+          <p class="uvodny-text">Hi! I'm an Informatics student who loves solving problems and exploring new ideas. My interest in IT was inspired by my family and a high school teacher who helped me discover my passion for technology. I'm always curious, eager to learn and ready for new challenges.</p>
+          <dl class="fakty">
+            <div><dt>Studying</dt><dd>VŠB-TUO, Ostrava</dd></div>
+            <div><dt>From</dt><dd>Slovakia</dd></div>
+            <div><dt>Interests</dt><dd>Programming and problem solving</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="vyzva">
+      <h2>Got an idea or a question?</h2>
+      <a class="tlacidlo" href="kontakt.html">Get in touch</a>
+    </section>
+  </main>
+
+  <footer class="pata">
+    <p>&copy; <span id="rok">2026</span> Veronika Janolková</p>
+    <p><a href="kontakt.html">Contact</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
